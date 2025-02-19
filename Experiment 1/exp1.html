@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./exp1.css">
+    <title>Basics oh html and css</title>
+    <style>
+        body{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .heading{
+            background: linear-gradient(120deg,rgb(168, 2, 245),rgb(72, 14, 218));
+            display: flex ;
+            justify-content: center;
+            color: red ;
+            padding: 80px;
+            font-size: 30px;
+        }
+        .navbar{
+            display: flex;
+            position: sticky;
+            background-color: black;
+            color: azure;
+            justify-content: center;
+           flex-wrap: wrap;
+           width: 100%;
+           top: 0;
+           z-index: 1000;
+        }
+        
+        .grid-element:hover{
+            transform: scale(1.15); /* Makes it 20% bigger when hovered */
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            background: linear-gradient(45deg,rgb(2, 87, 245),rgb(14, 201, 218));
+            color: azure;
+        }   
+        .image{
+            display: inline;
+            margin: 15px 15px 15px 15px;
+            border: solid paleturquoise 2px;
+            border-radius: 30px;
+        } 
+        .content{
+            display: flex;
+        align-items: center; /* Aligns text and image vertically */
+        gap: 20px;
+        }
+        .content p {
+        flex: 1; /* Allows text to take remaining space */
+        font-size: 18px;
+    }
+
+    </style>
+</head>
+<body>
+    <div class="heading" style="color: cornsilk;"><h1>My website</h1></div>
+    <nav class="navbar">
+        <div class="nav-element">Home</div>
+        <div class="nav-element">offers</div>
+        <div class="nav-element">For you</div>
+        <div class="nav-element">About us</div>
+        <div class="nav-element">Contact us</div>
+    </nav>
+        <div class="content">
+        <img class="image" src="https://mmgroup.vn/wp-content/uploads/2021/07/phat-trien-web-site.jpg" alt="" srcset="">
+        <p>        <b>About A Website</b>
+                <br>
+            Website development is the process of building, designing, and maintaining websites for the internet. It involves multiple steps, including planning, designing, coding, testing, and deploying the site. The development process is divided into two main parts: frontend development, which focuses on the visual and interactive aspects using technologies like HTML, CSS, and JavaScript, and backend development, which handles the server, database, and logic using languages like Node.js, Python, PHP, or Java.  
+
+            Web development can range from simple static websites with fixed content to dynamic websites that update content automatically using databases. It also includes responsive design ensuring websites work well on different screen sizes, and SEO (Search Engine Optimization) to improve visibility in search engines.  
+            
+            Websites play a crucial role in today's digital world, serving purposes such as business promotion, education, entertainment, social networking, and online shopping. With the rise of content management systems (CMS) like WordPress and website builders like Wix, even non-programmers can create websites. However, for advanced features and customization, professional web development is essential.</p> 
+   </div>
+    <div class="grid-container">
+        <div class="grid-element">element 1</div>
+        <div class="grid-element">element 2</div>
+        <div class="grid-element">element 3</div>
+        <div class="grid-element">element 4</div>
+        <div class="grid-element">element 5</div>
+        <div class="grid-element">element 6</div>
+        <div class="grid-element">element 7</div>
+        <div class="grid-element">element 8</div>
+        <div class="grid-element">element 9</div>
+    </div>
+    </body>
+</html>
